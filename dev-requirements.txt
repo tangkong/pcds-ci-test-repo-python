@@ -8,6 +8,6 @@ docs-versions-menu
 doctr
 numpydoc
 recommonmark
-sphinx
+sphinx<6
 sphinx-copybutton
 sphinx_rtd_theme
