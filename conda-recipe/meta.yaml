@@ -1,0 +1,32 @@
+{% set data = load_setup_py_data() %}
+
+package:
+  name: project_name
+  version: {{ data.get('version') }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - python >=3.7
+    - setuptools
+  run:
+    - python >=3.7
+
+test:
+  imports:
+    - project_name
+  requires:
+    - pytest
+
+about:
+  home: https://github.com/pcdshub/project-name
+  license: LicenseRef-BSD-3-Clause-SLAC
+  license_family: BSD
+  summary: A short description of the project.
