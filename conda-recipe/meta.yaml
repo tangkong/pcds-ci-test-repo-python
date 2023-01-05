@@ -1,8 +1,10 @@
-{% set data = load_setup_py_data() %}
+{% set package_name = "project-name" %}
+{% set import_name = "project_name" %}
+{% set version = load_file_regex(load_file=os.path.join(import_name, "_version.py"), regex_pattern=".*version = '(\S+)'").group(1) %}
 
 package:
-  name: project_name
-  version: {{ data.get('version') }}
+  name: {{ package_name }}
+  version: {{ version }}
 
 source:
   path: ..
@@ -15,13 +17,14 @@ build:
 requirements:
   build:
     - python >=3.7
-    - setuptools
+    - pip
+    - setuptools_scm
   run:
     - python >=3.7
 
 test:
   imports:
-    - project_name
+    - {{ import_name }}
   requires:
     - pytest
 
