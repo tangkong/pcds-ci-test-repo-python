@@ -22,9 +22,9 @@ requires-python = ">=3.9"
 zip_safe = false
 include_package_data = true
 
-[options.packages.find]
-where = [ "project_name",]
-include = []
+[tool.setuptools.packages.find]
+where = [ ".",]
+include = [ "project_name*",]
 namespaces = false
 
 [[project.authors]]
@@ -34,7 +34,7 @@ name = "SLAC National Accelerator Laboratory"
 file = "LICENSE"
 
 [project.scripts]
-project-name = "project_name.bin.main:main"
+"project-name" = "project_name.bin.main:main"
 
 [tool.setuptools_scm]
 write_to = "project_name/_version.py"

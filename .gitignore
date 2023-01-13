@@ -114,5 +114,3 @@ Thumbs.db
 
 # setuptools-scm _version.py should not be tracked:
 /project_name/_version.py
-# Similarly, we are using pyproject.toml. Do not use setup.py:
-/setup.py
