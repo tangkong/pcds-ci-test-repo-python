@@ -1,0 +1,11 @@
+[run]
+source =
+    project_name
+[report]
+omit =
+    #versioning
+    .*version.*
+    *_version.py
+    #tests
+    *test*
+    project_name/tests/*
