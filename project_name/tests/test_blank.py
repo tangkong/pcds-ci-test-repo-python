@@ -5,3 +5,4 @@ def test_blank():
 
     Remove this function and write your own tests!
     """
+    assert False
