@@ -1,0 +1,6 @@
+# Default owners are pcds-platforms-development
+* @robert-test-tk
+
+*.txt @tangkong
+
+*.py @ZLLentz
