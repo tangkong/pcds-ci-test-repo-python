@@ -1,2 +1,6 @@
 # Default owners are pcds-platforms-development
 * @pcdshub/pcds-platform-development
+
+*.txt @tangkong
+
+*.py @ZLLentz
