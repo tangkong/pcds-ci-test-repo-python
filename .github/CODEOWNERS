@@ -1,8 +1,8 @@
-.github/** @pcdshub/software-admin
-
 # Default owners are pcds-platforms-development
 * @robert-test-tk
 
 *.txt @tangkong
 
 *.py @ZLLentz
+
+.github/** @pcdshub/software-admin
