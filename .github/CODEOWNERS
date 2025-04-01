@@ -5,6 +5,6 @@
 
 *.py @ZLLentz
 
-*.{py,py*} @pcdshub/python-reviewers
+*.{py,pyi,pyc,pyw,pyx,pyd} @pcdshub/python-reviewers
 
 .github/** @pcdshub/software-admin
