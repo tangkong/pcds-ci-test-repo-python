@@ -9,6 +9,6 @@
 
 # **/*.{py,pyi,pyc,pyw,pyx,pyd} @pcdshub/python-reviewers  # does not work
 
-*.py[icwxd] @pcdshub/python-reviewers
+**/*.py[icwxd] @pcdshub/python-reviewers
 
 .github/** @pcdshub/software-admin
