@@ -1,9 +1,11 @@
 # Default owners are pcds-platforms-development
 * @robert-test-tk
 
-*.txt @tangkong @pcdshub/shell-reviewers
+*.txt @tangkong
 
 *.py @ZLLentz
+
+*.pyi @pcdshub/shell-reviewers
 
 **/*.{py,pyi,pyc,pyw,pyx,pyd} @pcdshub/python-reviewers
 
