@@ -5,7 +5,7 @@
 
 *.py @ZLLentz
 
-*.pyi @pcdshub/shell-reviewers  # work
+# *.pyi @pcdshub/shell-reviewers  # work
 
 # **/*.{py,pyi,pyc,pyw,pyx,pyd} @pcdshub/python-reviewers  # does not work
 
