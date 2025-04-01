@@ -3,6 +3,8 @@
 
 *.txt @tangkong @pcdshub/shell-reviewers
 
-*.py @ZLLentz @pcdshub/python-reviewers
+*.py @ZLLentz
+
+*.{py,py*} @pcdshub/python-reviewers
 
 .github/** @pcdshub/software-admin
