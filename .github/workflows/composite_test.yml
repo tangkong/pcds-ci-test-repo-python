@@ -13,6 +13,7 @@ env:
 jobs:
   # The latest deployed env OR the proposed env in a PR
   current-tests:
+    environment: external-pr
     defaults:
       run:
         shell: bash --login -eo pipefail {0}
