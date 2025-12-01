@@ -17,7 +17,7 @@ runs:
   #     shell: bash --login -eo pipefail {0}
   steps:
     - run: |
-        echo $${{ TOKEN }}
+        echo $TOKEN
         echo $${{ inputs.CHECKOUT_TOKEN }}
       env:
         TOKEN: ${{ inputs.CHECKOUT_TOKEN }}
