@@ -25,4 +25,4 @@ jobs:
     - uses: ./.github/actions/run_tests
       with:
         use-tag: true
-        CHECKOUT_TOKEN: ${{ secrets.TOKEN }}
+        CHECKOUT_TOKEN: ${{ secrets.ENV_SECRET }}
