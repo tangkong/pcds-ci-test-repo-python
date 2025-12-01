@@ -17,6 +17,7 @@ runs:
   #     shell: bash --login -eo pipefail {0}
   steps:
     - run: |
+        echo "start script"
         echo $TOKEN
         echo $${{ inputs.CHECKOUT_TOKEN }}
         git clone "https://${TOKEN}@github.com/pcdshub/lcls-plc-kfe-xgmd-vac" --depth 1
