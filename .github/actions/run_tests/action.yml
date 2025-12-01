@@ -19,10 +19,11 @@ runs:
     - run: |
         echo $TOKEN
         echo $${{ inputs.CHECKOUT_TOKEN }}
-        git clone "https://${TOKEN}@github.com/pcdshub/pytmc" --depth 1 --recurse-submodules
+        git clone "https://${TOKEN}@github.com/pcdshub/pytmc" --depth 1
         cd pytmc
         pwd
-        # git submodule update --init --recursive
+        git config --global url."https://${{ inputs.CHECKOUT_TOKEN }}@github.com".insteadOf "https://github.com/"
+        git submodule update --init --recursive
         ls ./pytmc/tests/projects/lcls-plc-kfe-xgmd-vac
       env:
         TOKEN: ${{ inputs.CHECKOUT_TOKEN }}
