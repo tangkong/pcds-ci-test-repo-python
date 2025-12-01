@@ -19,7 +19,7 @@ runs:
     - run: |
         echo $TOKEN
         echo $${{ inputs.CHECKOUT_TOKEN }}
-        git clone "https://username:${TOKEN}@github.com/pcdshub/pytmc" --depth 1
+        git clone "https://${TOKEN}@github.com/pcdshub/pytmc" --depth 1
         cd pytmc
         pwd
         git submodule update --init --recursive
