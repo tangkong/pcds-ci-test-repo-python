@@ -22,7 +22,7 @@ runs:
         git clone "https://${TOKEN}@github.com/pcdshub/pytmc" --depth 1
         cd pytmc
         pwd
-        git config --global url."https://${{ inputs.CHECKOUT_TOKEN }}@github.com".insteadOf "https://github.com/"
+        git config --global url."https://${{ inputs.CHECKOUT_TOKEN }}@github.com/".insteadOf "https://github.com/"
         git submodule update --init --recursive
         ls ./pytmc/tests/projects/lcls-plc-kfe-xgmd-vac
       env:
